@@ -6,6 +6,7 @@
     <meta name="viewpoint" content="width=device-width"/>
     <title><JadaWoods626.github.io></title>
     <link rel="stylesheet" type="text/css" href="./css/all.css"/>
+    <link rel="shortcut icon" type="img/jpg" href="./images/thumb/code.png">
   </head>
   <!--Body-->
   <body>
@@ -14,16 +15,16 @@
   <div class="Navbar">
     <a class="active" href="#Home">Home</a>
     <a href="#About">About</a>
+    <a href="#Slideshow">Slideshow</a>
     <a href="#GitHub">GitHub</a>
-    <a href="#Contact">Contact</a>
+  <!--Onclick and ondblclick functions to open and close the contact form-->
+  <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
   </div>
-  <!--Break between first heading and navbar-->
-  <br>
-  <br>
+ 
   <!--Background Video-->
   <div id="Home">
     <video autoplay muted loop id="giant_camera">
-      <source src="./images/thumb/a.mp4" type="video/mp4">
+      <source src="./images/thumb/c.mp4" type="video/mp4">
       <!--Message if video doesn't play-->
       Your browser does not support HTML5 video.
     </video>
@@ -42,11 +43,62 @@
       </p>
     </strong>
   </div>
+  <!--Slideshow section-->
+  <div id="Slideshow">
+    <div id="Slideshow_Container">
+     
+       <!--Slide 1-->
+       <div  class="mySlides fade">
+        <img class="Slideshow_Images" src="./images/thumb/photoshop_jada.jpg" alt="My photo">
+        <div class="text">I am available to assist you on your project</div>
+      </div>
+       <!--Slide 2-->
+       <div  class="mySlides fade">
+        <img class="Slideshow_Images" src="./images/thumb/java.jpeg" alt="HTML, CSS, And Javascript">
+        <div class="text">I am trained in the folowing: HTML, CSS, Javascript,</div>
+      </div>
+       <!--Slide 3-->
+       <div  class="mySlides fade">
+        <img class="Slideshow_Images" src="./images/thumb/Python.png" alt="Python">
+        <div class="text">Python,</div>
+      </div>
+       <!--Slide 4-->
+       <div  class="mySlides fade">
+        <img class="Slideshow_Images" src="./images/thumb/Sql.jpg" alt="SQL">
+        <div class="text">SQL,</div>
+      </div>
+       <!--Slide 5-->
+       <div  class="mySlides fade">
+        <img class="Slideshow_Images" src="./images/thumb/c.png" alt="C#">
+        <div class="text">and C#.</div>
+      </div>
+       <!--Slide 6-->
+       <div  class="mySlides fade">
+        <img class="Slideshow_Images" src="./images/thumb/photoshop1.jpg" alt="Graphic design materials">
+        <div class="text">Contact me now!</div>
+      </div>
+      <!--Previous and next buttons-->
+      <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+      <br> <!--space between slideshow and and dots-->
+    </div>
+  </div>
+    <div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+ 
   <!--About Section-->
   <div class="Row" id="About">
     <!--Left Column-->
     <div class="Column_2">
-      <img src="./images/thumb/1.jpg" alt="Graphic design tablet">
+      <video autoplay muted loop id="graphic_design_video">
+      <source src="./images/thumb/b.mp4" type="video/mp4" alt="Graphic design video">
+    </video>
     </div>
     <!--Right Column-->
     <div class="Column_1">
@@ -86,23 +138,24 @@
       </a>
     </div>
   </div>
-  <!--Contact Section-->
-  <div class="Row" id="Contact">
-    <!--Contact, image, left column-->
-    <div class="Column_2 Column_tall">
-      <img src="./images/thumb/2.jpg" alt="Contact_Image">
-    </div>
-      <!--Contact form, right column-->
-      <div class="Column_1 Column_tall">
-      <h1>Contact</h1>
-      <form action="" method="POST">
+  <!--Contact Form-->
+  <div id="Contact">
+      <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+      <div class="form-popup" id="myForm">
+      <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+  <!--We are using https://formspree.io/ to send our contact form to an email address of our choosing-->
+  <h1>Contact</h1>
         <label>Name:</label>
         <input type="text" placeholder="Please enter your name here">
+        <label>Phone:</label>
+        <input type="text" placeholder="Please enter your phone number here">
         <label>Email:</label>
-        <input type="text" id="Email" name="Email" placeholder="Please enter email here">
+        <input type="text" name="Email" placeholder="Please enter email here">
         <label>Message:</label>
         <input type="text" name="Message" placeholder="Please enter your message here">
-        <input type="submit" value="SUBMIT">
+
+        <button type="submit" class="btn">SUBMIT</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
       </form>
     </div>
   </div>
@@ -110,10 +163,11 @@
   <!--Footer-->
   <footer>
     <p>
-      <p class="center">&copy;Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
+      <p class="center_foot">&copy;Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
          target="_blank" >The Tech Academy</a></p>
       <br>
     </p>
   </footer>
+  <script src="./js/main.js"></script>
   </body>
 </html>
