@@ -227,3 +227,45 @@ img {
     opacity: 1;
   } /*Image ends opaque*/
 }
+
+
+
+@media screen and (max-width: 1440px) {
+  #animation_background {
+  filter: grayscale(30%);
+  background-size: cover;
+  margin-right: -15rem;
+  margin-bottom: -3rem;
+  z-index: -1;}
+}
+
+@media screen and (max-width: 1440px) {
+  #Slideshow_Container {
+    width: 1250px; /*Relative sizing of the container for the slideshow set to 39.5% of the viewpoint width*/
+    height: 750px; /*the height of the container is automatically adjusted based on the content it is displaying*/
+    padding-top: 4%; /*Adds a small padding to the top of the slidshow container*/
+    position: relative; /*this sets the container relative to its normal positioning*/
+    margin-right: 0.2rem; /*This will horizontally center the container on the page*/
+    border-radius: 7px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #animation_background {
+  filter: grayscale(30%);
+  background-size: cover;
+  margin-right: -33rem;
+  margin-bottom: -3rem;
+  z-index: -1;}
+}
+
+@media screen and (max-width: 1024px) {
+  #Slideshow_Container {
+    width: 831px; /*Relative sizing of the container for the slideshow set to 39.5% of the viewpoint width*/
+    height: 500px; /*the height of the container is automatically adjusted based on the content it is displaying*/
+    padding-top: 16%; /*Adds a small padding to the top of the slidshow container*/
+    position: relative; /*this sets the container relative to its normal positioning*/
+    margin-right: rem; /*This will horizontally center the container on the page*/
+    border-radius: 7px;
+  }
+}

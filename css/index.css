@@ -31,14 +31,12 @@ label {
 img {
   border-radius: 50%;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.856);
+  position: absolute;
+  left: 40%;
+  top: 23%;
+  width: 20%;
 }
-#imgmover {
-  display: flex;
-  justify-content: center;
-  padding-top: 13.5rem;
-  padding-right: 0.2rem;
-  z-index: -1;
-}
+
 
 /* VIDEO BACKGROUND */
 #animation_background {
@@ -54,9 +52,9 @@ img {
   background: rgba(255, 255, 255, 0);
   color: white;
   width: 100%;
-  height: 100vh;
   padding-top: 2vh;
-  position: relative;
+  position: absolute;
+  bottom: 4rem;
   -webkit-animation: moveVideoText 5.75s;
   animation: moveVideoText 5.75s;
 }
@@ -159,5 +157,53 @@ button:hover,
   background-color: #ffffff;
   color: #d4e4ff;
   border-color: #d4e4ff;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1440px) {
+  img {
+   border-radius: 50%;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.856);
+   position: absolute;
+   left: 36.5%;
+   top: 16%;
+   width: 27%;}
+ }
+ 
+ @media screen and (max-width: 1440px) {
+   #animation_background {
+   filter: grayscale(30%);
+   background-size: cover;
+   margin-right: -14.5rem;
+   z-index: -1;}
+ }
+
+ @media screen and (max-width: 1024px) {
+  img {
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.856);
+    position: absolute;
+    left: 31%;
+    width: 38%;}
+ }
+ 
+ 
+ @media screen and (max-width: 1024px) {
+   #animation_background {
+    filter: grayscale(30%);
+    background-size: cover;
+    margin-right: -27.5rem;
+    z-index: -1;}
+ }
+
+
+@media screen and (max-width: 576px) {
+ 
+}
+
+
+@media screen and (max-width: 576px) {
+  
 }
 
