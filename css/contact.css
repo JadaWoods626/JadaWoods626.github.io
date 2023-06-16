@@ -25,18 +25,6 @@ h1 {
   padding-right: 1vw;
   color: #ffffff;
 }
-/* HOMEPAGE IMAGE */
-img {
-  border-radius: 50%;
-}
-#imgmover {
-  display: flex;
-  justify-content: center;
-  padding-top: 13.5rem;
-  padding-right: 0.2rem;
-  z-index: -1;
-}
-
 /* VIDEO BACKGROUND */
 #animation_background {
   filter: grayscale(30%);
@@ -46,20 +34,14 @@ img {
   min-width: 100%;
   z-index: -1;
 }
-
-/* The overlay effect with black background */
-.overlay {
-  height: 100%;
+.Video_Text {
+  background: rgba(255, 255, 255, 0);
+  color: white;
   width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+  padding-top: 2vh;
+  position: absolute;
+  bottom: 4rem;
 }
-
 /* NAVBAR STYLING */
 .sidenav {
   height: 100%;
@@ -75,18 +57,15 @@ img {
   flex-direction: column;
   justify-content: space-evenly;
 }
-/* The navigation menu links */
 .sidenav a {
   font-size: 25px;
   color: #ffffff;
   display: block;
   font-family: "Kalam", sans-serif;
 }
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #2e57af;
 }
-/* Style page content */
 .main {
   margin-left: 160px;
   padding: 0px 10px;
@@ -103,7 +82,6 @@ img {
   border-radius: 45%;
   text-align: center;
 }
-
 .contact {
     border-radius: 12px 12px 12px 12px;
     margin: 8px;
@@ -111,7 +89,6 @@ img {
     font-size: x-large;
     font-family: Kalam;
 }
-
 .label {
     margin: 10px;
     width: 100%;
@@ -120,7 +97,6 @@ img {
     padding: 5px;
     border: none;
 }
-
 .submit{
   width: 30%;
   padding: 14px 14px 14px 14px;
@@ -137,25 +113,68 @@ img {
   align-content: center;
   font-size: large;
 }
-
 #messagebox {
 height: 50px;
 }
+@media screen and (max-width: 2560px) {
+  #animation_background {
+ filter: grayscale(30%);
+  background-size: cover;
+  margin-left: -31.5rem;
+  margin-bottom: ;
+  height: 2000px;
+  z-index: -1;}
+}
+@media screen and (max-width: 2560px) {
+  .container{
+  width: 25%;
+  padding-top: 18.5%;
+  background-color: #7a141400;
+  color:rgb(0, 0, 0);
+  border-radius: 45%;
+  text-align: center;}
+}
 
+@media screen and (max-width: 2560px) {
+#messagebox {
+height: 100px;}
+}
+@media screen and (max-width: 2560px) {
+.label {
+font-size: xx-large;}
+}
+@media screen and (max-width: 2560px) {
+.submit{
+    width: 35%;
+    padding: 2%;
+    border-radius: 5%;
+    cursor: pointer;
+    float: inline-end;
+    margin: 10px;
+    border: none;
+    background-color: #ebb738;
+    color:#2e57af;
+    font-family: Kalam;
+    outline-color: #e75480;
+    outline-style: double;
+    align-content: center;
+    font-size: x-large;}
+}
 
 @media screen and (max-width: 1440px) {
   #animation_background {
   filter: grayscale(30%);
   background-size: cover;
-  margin-right: -15.4rem;
-  margin-bottom: -3rem;
+  margin-left: -21.8rem;
+  margin-bottom: -6rem;
+  height: 1200px;
   z-index: -1;}
 }
 @media screen and (max-width: 1440px) {
   .container{
-  margin-right: 26.rem;
-  width: 23%;
-  padding: 10%;
+  margin-right: 25rem;
+  width: 24%;
+  padding-top: 15%;
   background-color: #7a141400;
   color:rgb(0, 0, 0);
   border-radius: 45%;
@@ -185,46 +204,56 @@ height: 50px;}
     font-size: large;}
 }
 
+@media screen and (max-width: 1440px) {
+  .label {
+  font-size: small;}
+  }
 
-@media screen and (max-width: 1024px) {
-  #animation_background {
-  filter: grayscale(30%);
-  background-size: cover;
-  margin-right: -28rem;
-  margin-bottom: -3rem;
-  z-index: -1;}
-}
-
-@media screen and (max-width: 1024px) {
-  .container{
-  margin-right: 12.5rem;
-  width: 30%;
-  padding: 15%;
-  background-color: #7a141400;
-  color:rgb(0, 0, 0);
-  border-radius: 45%;
-  text-align: center;}
-}
-
-@media screen and (max-width: 1024px) {
-#messagebox {
-height: 50px;}
-}
-
-@media screen and (max-width: 1024px) {
-.submit{
-    width: 40%;
-    padding: 14px 14px 14px 14px;
-    border-radius: 5%;
-    cursor: pointer;
-    float: inline-end;
-    margin: 10px;
-    border: none;
-    background-color: #ebb738;
-    color:#2e57af;
-    font-family: Kalam;
-    outline-color: #e75480;
-    outline-style: double;
-    align-content: center;
-    font-size: large;}
-}
+  @media screen and (max-width: 1024px) {
+    #animation_background {
+    filter: grayscale(30%);
+    background-size: cover;
+    margin-left: -34.5rem;
+    margin-bottom: -10rem;
+    height: 1200px;
+    z-index: -1;}
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .container{
+    margin-right: 16.5rem;
+    width: 26%;
+    padding-top: 20%;
+    background-color: #7a141400;
+    color:rgb(0, 0, 0);
+    border-radius: 45%;
+    text-align: center;}
+  }
+  
+  @media screen and (max-width: 1024px) {
+  .submit{
+      width: 40%;
+      padding: 2%;
+      border-radius: 5%;
+      cursor: pointer;
+      float: inline-end;
+      margin: 10px;
+      border: none;
+      background-color: #ebb738;
+      color:#2e57af;
+      font-family: Kalam;
+      outline-color: #e75480;
+      outline-style: double;
+      align-content: center;
+      font-size: medium;}
+  }
+  
+  @media screen and (max-width: 1440px) {
+  #messagebox {
+  height: 80px;}
+  }
+  
+  @media screen and (max-width: 1440px) {
+  .label {
+  font-size: xx-small;}
+  }

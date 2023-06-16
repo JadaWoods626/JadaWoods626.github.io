@@ -228,8 +228,26 @@ img {
   } /*Image ends opaque*/
 }
 
+@media screen and (max-width: 2560px) {
+  #animation_background {
+  filter: grayscale(30%);
+  background-size: cover;
+  margin-right: -45.5rem;
+  margin-bottom: -7rem;
+  height: 2200px;
+  z-index: -1;}
+}
 
-
+@media screen and (max-width: 2560px) {
+  #Slideshow_Container {
+    width: 2360px; /*Relative sizing of the container for the slideshow set to 39.5% of the viewpoint width*/
+    height: 1340px; /*the height of the container is automatically adjusted based on the content it is displaying*/
+    padding-top: 4%; /*Adds a small padding to the top of the slidshow container*/
+    position: relative; /*this sets the container relative to its normal positioning*/
+    margin-right: 0.5rem; /*This will horizontally center the container on the page*/
+    border-radius: 7px;
+  }
+}
 @media screen and (max-width: 1440px) {
   #animation_background {
   filter: grayscale(30%);
